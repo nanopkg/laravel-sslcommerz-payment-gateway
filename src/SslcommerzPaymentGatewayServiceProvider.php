@@ -2,9 +2,9 @@
 
 namespace Nanopkg\SslcommerzPaymentGateway;
 
+use Nanopkg\SslcommerzPaymentGateway\Commands\SslcommerzPaymentGatewayCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Nanopkg\SslcommerzPaymentGateway\Commands\SslcommerzPaymentGatewayCommand;
 
 class SslcommerzPaymentGatewayServiceProvider extends PackageServiceProvider
 {

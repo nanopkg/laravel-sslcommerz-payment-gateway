@@ -3,8 +3,8 @@
 namespace Nanopkg\SslcommerzPaymentGateway\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Nanopkg\SslcommerzPaymentGateway\SslcommerzPaymentGatewayServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

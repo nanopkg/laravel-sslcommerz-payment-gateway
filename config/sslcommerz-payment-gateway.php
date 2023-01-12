@@ -23,7 +23,7 @@ return [
     | value is used to authenticate the store api.
     |
     */
-    'store_id' => env('SSLCOMMERZ_STORE_ID', NULL),
+    'store_id' => env('SSLCOMMERZ_STORE_ID', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | value is used to authenticate the store api.
     |
     */
-    'store_id' => env('SSLCOMMERZ_STORE_ID', NULL),
+    'store_id' => env('SSLCOMMERZ_STORE_ID', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,13 +52,13 @@ return [
         // for init payment api url
         'make_payment' => '/gwprocess/v4/api.php',
         // for checkering transaction status api url
-        'transaction_status' => "/validator/api/merchantTransIDvalidationAPI.php",
+        'transaction_status' => '/validator/api/merchantTransIDvalidationAPI.php',
         // for order validate
-        'order_validate' => "/validator/api/validationserverAPI.php",
+        'order_validate' => '/validator/api/validationserverAPI.php',
         // for refund payment
-        'refund_payment' => "/validator/api/merchantTransIDvalidationAPI.php",
+        'refund_payment' => '/validator/api/merchantTransIDvalidationAPI.php',
         // for checking refund status
-        'refund_status' => "/validator/api/merchantTransIDvalidationAPI.php",
+        'refund_status' => '/validator/api/merchantTransIDvalidationAPI.php',
     ],
 
     /*
@@ -69,7 +69,7 @@ return [
     | value is used when need api domain url.
     |
     */
-    'api_domain' => config('sslcommerz-payment-gateway.mode') == 'sandbox' ? config('sslcommerz-payment-gateway.api_url.sandbox')  :  config('sslcommerz-payment-gateway.api_url.live'),
+    'api_domain' => config('sslcommerz-payment-gateway.mode') == 'sandbox' ? config('sslcommerz-payment-gateway.api_url.sandbox') : config('sslcommerz-payment-gateway.api_url.live'),
 
     /*
     |--------------------------------------------------------------------------
@@ -99,8 +99,5 @@ return [
         // for ipn callback url
         'ipn' => 'sslcommerz/ipn',
     ],
-
-
-
 
 ];
